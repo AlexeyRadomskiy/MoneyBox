@@ -27,12 +27,19 @@ class GoalListViewController: UITableViewController {
         let goal = goals[indexPath.row]
         
         content.text = goal.goalName
-        content.secondaryText = "\(goal.income)"
+        content.secondaryText = "Стоимость: \(goal.income) рублей"
         content.image = UIImage(named: goal.photo)
         content.imageProperties.cornerRadius = 20
         
         cell.contentConfiguration = content
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let mainGoalVC = segue.destination as? MainGoalViewController else { return }
+            mainGoalVC.goal = goals[indexPath.row]
+        }
     }
 }
