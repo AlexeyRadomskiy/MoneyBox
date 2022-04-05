@@ -16,6 +16,7 @@
 		6CD1D01E27E5366000261B5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1D01C27E5366000261B5D /* Main.storyboard */; };
 		6CD1D02027E5366200261B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1D01F27E5366200261B5D /* Assets.xcassets */; };
 		6CD1D02327E5366200261B5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1D02127E5366200261B5D /* LaunchScreen.storyboard */; };
+		6CF0292727FCD4AE0053D26A /* MainGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0292627FCD4AE0053D26A /* MainGoalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6CD1D01F27E5366200261B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CD1D02227E5366200261B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CD1D02427E5366200261B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CF0292627FCD4AE0053D26A /* MainGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGoalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				6C39B6E627FC998C00108F3D /* CreateGoalViewController.swift */,
 				6C39B6E827FC9AE700108F3D /* GoalListViewController.swift */,
+				6CF0292627FCD4AE0053D26A /* MainGoalViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			files = (
 				6CD1D01727E5366000261B5D /* AppDelegate.swift in Sources */,
 				6C39B6F327FCA4BD00108F3D /* DataManager.swift in Sources */,
+				6CF0292727FCD4AE0053D26A /* MainGoalViewController.swift in Sources */,
 				6C39B6E927FC9AE700108F3D /* GoalListViewController.swift in Sources */,
 				6CD1D01927E5366000261B5D /* SceneDelegate.swift in Sources */,
 				6C39B6EB27FC9B5400108F3D /* Goal.swift in Sources */,
