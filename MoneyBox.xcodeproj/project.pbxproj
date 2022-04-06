@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -84,7 +84,6 @@
 			children = (
 				6C39B6E527FC997500108F3D /* ViewControllers */,
 				6CE5158527F4D14B00BE8497 /* Models */,
-				6CF0292527FCB6340053D26A /* Views */,
 				6C39B6F127FCA4AF00108F3D /* Services */,
 				6CD1D02B27E536CA00261B5D /* Storyboards */,
 				6CD1D02D27E536EB00261B5D /* Resources */,
@@ -128,13 +127,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		6CF0292527FCB6340053D26A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,7 +163,7 @@
 				};
 			};
 			buildConfigurationList = 6CD1D00E27E5366000261B5D /* Build configuration list for PBXProject "MoneyBox" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
