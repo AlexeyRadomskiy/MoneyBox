@@ -17,6 +17,7 @@
 		6CD1D02027E5366200261B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1D01F27E5366200261B5D /* Assets.xcassets */; };
 		6CD1D02327E5366200261B5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1D02127E5366200261B5D /* LaunchScreen.storyboard */; };
 		6CF0292727FCD4AE0053D26A /* MainGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0292627FCD4AE0053D26A /* MainGoalViewController.swift */; };
+		6CF0292927FE24680053D26A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0292827FE24680053D26A /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6CD1D02227E5366200261B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CD1D02427E5366200261B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CF0292627FCD4AE0053D26A /* MainGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGoalViewController.swift; sourceTree = "<group>"; };
+		6CF0292827FE24680053D26A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				6CD1D01627E5366000261B5D /* AppDelegate.swift */,
 				6CD1D01827E5366000261B5D /* SceneDelegate.swift */,
 				6CD1D02427E5366200261B5D /* Info.plist */,
+				6CF0292827FE24680053D26A /* .gitignore */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF0292927FE24680053D26A /* .gitignore in Resources */,
 				6CD1D02327E5366200261B5D /* LaunchScreen.storyboard in Resources */,
 				6CD1D02027E5366200261B5D /* Assets.xcassets in Resources */,
 				6CD1D01E27E5366000261B5D /* Main.storyboard in Resources */,
