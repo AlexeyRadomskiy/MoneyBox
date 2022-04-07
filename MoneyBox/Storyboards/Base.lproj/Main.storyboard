@@ -129,6 +129,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Задать цель"/>
+                                <connections>
+                                    <segue destination="S8P-iU-yvu" kind="show" id="GCI-Um-2Hb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="guA-Sn-8uG"/>
@@ -515,6 +518,9 @@
             <point key="canvasLocation" x="-1778" y="-183"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GCI-Um-2Hb"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="firstSlide" width="666.5" height="596.5"/>
         <image name="gear" catalog="system" width="128" height="119"/>
