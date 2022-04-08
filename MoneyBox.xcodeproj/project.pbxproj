@@ -22,9 +22,10 @@
 		9A82D49327FF58D7006E5498 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49227FF58D7006E5498 /* ContentViewController.swift */; };
 		9A82D49627FF58FA006E5498 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49527FF58FA006E5498 /* OnboardingSlide.swift */; };
 		9A82D49927FF590B006E5498 /* SlideDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49827FF590B006E5498 /* SlideDataManager.swift */; };
-		9A82D49C27FF5FEF006E5498 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49B27FF5FEF006E5498 /* WelcomeViewController.swift */; };
-		9A82D4A027FF6366006E5498 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49F27FF6366006E5498 /* NameViewController.swift */; };
 		9A82D4A727FF642A006E5498 /* backgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D4A627FF642A006E5498 /* backgroundGradient.swift */; };
+		9A9899ED28007A7200A4166B /* DevelopersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9899EC28007A7200A4166B /* DevelopersTableViewController.swift */; };
+		9A9899F02800810200A4166B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9899EF2800810200A4166B /* CustomTableViewCell.swift */; };
+		9A9899F3280085A600A4166B /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9899F2280085A600A4166B /* Developer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +46,10 @@
 		9A82D49227FF58D7006E5498 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		9A82D49527FF58FA006E5498 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		9A82D49827FF590B006E5498 /* SlideDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideDataManager.swift; sourceTree = "<group>"; };
-		9A82D49B27FF5FEF006E5498 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		9A82D49F27FF6366006E5498 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		9A82D4A627FF642A006E5498 /* backgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundGradient.swift; sourceTree = "<group>"; };
+		9A9899EC28007A7200A4166B /* DevelopersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersTableViewController.swift; sourceTree = "<group>"; };
+		9A9899EF2800810200A4166B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		9A9899F2280085A600A4166B /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +69,7 @@
 				6C39B6E627FC998C00108F3D /* CreateGoalViewController.swift */,
 				6C39B6E827FC9AE700108F3D /* GoalListViewController.swift */,
 				6CF0292627FCD4AE0053D26A /* MainGoalViewController.swift */,
-				9A82D49B27FF5FEF006E5498 /* WelcomeViewController.swift */,
-				9A82D49F27FF6366006E5498 /* NameViewController.swift */,
+				9A9899EC28007A7200A4166B /* DevelopersTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -144,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				6C39B6EA27FC9B5400108F3D /* Goal.swift */,
+				9A9899EF2800810200A4166B /* CustomTableViewCell.swift */,
+				9A9899F2280085A600A4166B /* Developer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,15 +261,16 @@
 				9A82D49627FF58FA006E5498 /* OnboardingSlide.swift in Sources */,
 				6CD1D01727E5366000261B5D /* AppDelegate.swift in Sources */,
 				6C39B6F327FCA4BD00108F3D /* DataManager.swift in Sources */,
+				9A9899ED28007A7200A4166B /* DevelopersTableViewController.swift in Sources */,
 				6CF0292727FCD4AE0053D26A /* MainGoalViewController.swift in Sources */,
-				9A82D4A027FF6366006E5498 /* NameViewController.swift in Sources */,
 				6C39B6E927FC9AE700108F3D /* GoalListViewController.swift in Sources */,
+				9A9899F3280085A600A4166B /* Developer.swift in Sources */,
 				9A82D49327FF58D7006E5498 /* ContentViewController.swift in Sources */,
 				6CD1D01927E5366000261B5D /* SceneDelegate.swift in Sources */,
 				6C39B6EB27FC9B5400108F3D /* Goal.swift in Sources */,
 				9A82D4A727FF642A006E5498 /* backgroundGradient.swift in Sources */,
+				9A9899F02800810200A4166B /* CustomTableViewCell.swift in Sources */,
 				6C39B6E727FC998C00108F3D /* CreateGoalViewController.swift in Sources */,
-				9A82D49C27FF5FEF006E5498 /* WelcomeViewController.swift in Sources */,
 				9A82D48F27FF58C2006E5498 /* PageViewController.swift in Sources */,
 				9A82D49927FF590B006E5498 /* SlideDataManager.swift in Sources */,
 			);
@@ -345,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -400,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -425,7 +429,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +458,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
