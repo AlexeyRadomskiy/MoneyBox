@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C39B6E727FC998C00108F3D /* CreateGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39B6E627FC998C00108F3D /* CreateGoalViewController.swift */; };
-		6C39B6E927FC9AE700108F3D /* GoalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39B6E827FC9AE700108F3D /* GoalListViewController.swift */; };
 		6C39B6EB27FC9B5400108F3D /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39B6EA27FC9B5400108F3D /* Goal.swift */; };
-		6C39B6F327FCA4BD00108F3D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39B6F227FCA4BD00108F3D /* DataManager.swift */; };
+		6CCE95AC280AD85F0027D837 /* GoalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE95AB280AD85F0027D837 /* GoalTableViewController.swift */; };
+		6CCE95AE280ADBE50027D837 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE95AD280ADBE50027D837 /* GoalTableViewCell.swift */; };
+		6CCE95B0280AF5A50027D837 /* NewGoalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE95AF280AF5A50027D837 /* NewGoalTableViewController.swift */; };
+		6CCE95B4280B567E0027D837 /* MainGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE95B3280B567E0027D837 /* MainGoalViewController.swift */; };
+		6CCE95B6280C05670027D837 /* EditGoalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE95B5280C05670027D837 /* EditGoalTableViewController.swift */; };
 		6CD1D01727E5366000261B5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD1D01627E5366000261B5D /* AppDelegate.swift */; };
 		6CD1D01927E5366000261B5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD1D01827E5366000261B5D /* SceneDelegate.swift */; };
 		6CD1D01E27E5366000261B5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1D01C27E5366000261B5D /* Main.storyboard */; };
 		6CD1D02027E5366200261B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1D01F27E5366200261B5D /* Assets.xcassets */; };
 		6CD1D02327E5366200261B5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1D02127E5366200261B5D /* LaunchScreen.storyboard */; };
-		6CF0292727FCD4AE0053D26A /* MainGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0292627FCD4AE0053D26A /* MainGoalViewController.swift */; };
 		6CF0292927FE24680053D26A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0292827FE24680053D26A /* .gitignore */; };
 		9A82D48F27FF58C2006E5498 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D48E27FF58C2006E5498 /* PageViewController.swift */; };
 		9A82D49327FF58D7006E5498 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49227FF58D7006E5498 /* ContentViewController.swift */; };
@@ -28,10 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C39B6E627FC998C00108F3D /* CreateGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalViewController.swift; sourceTree = "<group>"; };
-		6C39B6E827FC9AE700108F3D /* GoalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListViewController.swift; sourceTree = "<group>"; };
 		6C39B6EA27FC9B5400108F3D /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
-		6C39B6F227FCA4BD00108F3D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6CCE95AB280AD85F0027D837 /* GoalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewController.swift; sourceTree = "<group>"; };
+		6CCE95AD280ADBE50027D837 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+		6CCE95AF280AF5A50027D837 /* NewGoalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalTableViewController.swift; sourceTree = "<group>"; };
+		6CCE95B3280B567E0027D837 /* MainGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGoalViewController.swift; sourceTree = "<group>"; };
+		6CCE95B5280C05670027D837 /* EditGoalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalTableViewController.swift; sourceTree = "<group>"; };
 		6CD1D01327E5366000261B5D /* MoneyBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD1D01627E5366000261B5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CD1D01827E5366000261B5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +42,6 @@
 		6CD1D01F27E5366200261B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CD1D02227E5366200261B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CD1D02427E5366200261B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CF0292627FCD4AE0053D26A /* MainGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGoalViewController.swift; sourceTree = "<group>"; };
 		6CF0292827FE24680053D26A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9A82D48E27FF58C2006E5498 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		9A82D49227FF58D7006E5498 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
@@ -64,11 +66,13 @@
 		6C39B6E527FC997500108F3D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6C39B6E627FC998C00108F3D /* CreateGoalViewController.swift */,
-				6C39B6E827FC9AE700108F3D /* GoalListViewController.swift */,
-				6CF0292627FCD4AE0053D26A /* MainGoalViewController.swift */,
 				9A82D49B27FF5FEF006E5498 /* WelcomeViewController.swift */,
 				9A82D49F27FF6366006E5498 /* NameViewController.swift */,
+				6CCE95AB280AD85F0027D837 /* GoalTableViewController.swift */,
+				6CCE95AD280ADBE50027D837 /* GoalTableViewCell.swift */,
+				6CCE95AF280AF5A50027D837 /* NewGoalTableViewController.swift */,
+				6CCE95B3280B567E0027D837 /* MainGoalViewController.swift */,
+				6CCE95B5280C05670027D837 /* EditGoalTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -76,7 +80,6 @@
 		6C39B6F127FCA4AF00108F3D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				6C39B6F227FCA4BD00108F3D /* DataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -257,15 +260,16 @@
 			files = (
 				9A82D49627FF58FA006E5498 /* OnboardingSlide.swift in Sources */,
 				6CD1D01727E5366000261B5D /* AppDelegate.swift in Sources */,
-				6C39B6F327FCA4BD00108F3D /* DataManager.swift in Sources */,
-				6CF0292727FCD4AE0053D26A /* MainGoalViewController.swift in Sources */,
 				9A82D4A027FF6366006E5498 /* NameViewController.swift in Sources */,
-				6C39B6E927FC9AE700108F3D /* GoalListViewController.swift in Sources */,
+				6CCE95AC280AD85F0027D837 /* GoalTableViewController.swift in Sources */,
+				6CCE95AE280ADBE50027D837 /* GoalTableViewCell.swift in Sources */,
 				9A82D49327FF58D7006E5498 /* ContentViewController.swift in Sources */,
+				6CCE95B6280C05670027D837 /* EditGoalTableViewController.swift in Sources */,
 				6CD1D01927E5366000261B5D /* SceneDelegate.swift in Sources */,
+				6CCE95B4280B567E0027D837 /* MainGoalViewController.swift in Sources */,
 				6C39B6EB27FC9B5400108F3D /* Goal.swift in Sources */,
 				9A82D4A727FF642A006E5498 /* backgroundGradient.swift in Sources */,
-				6C39B6E727FC998C00108F3D /* CreateGoalViewController.swift in Sources */,
+				6CCE95B0280AF5A50027D837 /* NewGoalTableViewController.swift in Sources */,
 				9A82D49C27FF5FEF006E5498 /* WelcomeViewController.swift in Sources */,
 				9A82D48F27FF58C2006E5498 /* PageViewController.swift in Sources */,
 				9A82D49927FF590B006E5498 /* SlideDataManager.swift in Sources */,
@@ -345,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -400,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -425,7 +429,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +458,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
