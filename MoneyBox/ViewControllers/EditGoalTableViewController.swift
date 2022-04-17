@@ -1,13 +1,13 @@
 //
-//  NewGoalTableViewController.swift
+//  EditGoalTableViewController.swift
 //  MoneyBox
 //
-//  Created by Alexey on 16.04.2022.
+//  Created by Alexey on 17.04.2022.
 //
 
 import UIKit
 
-class NewGoalTableViewController: UITableViewController {
+class EditGoalTableViewController: UITableViewController {
     
     var goal = Goal(name: "", photo: nil, price: "", savings: "", income: "", isFavourite: false, isDone: false)
     
@@ -17,7 +17,7 @@ class NewGoalTableViewController: UITableViewController {
     @IBOutlet weak var savingsTextField: UITextField!
     @IBOutlet weak var incomeTextField: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -49,22 +49,22 @@ class NewGoalTableViewController: UITableViewController {
         present(actionSheet, animated: true)
     }
     
-// MARK: - Navigation
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        guard segue.identifier == "saveSegue" else { return }
+        guard segue.identifier == "saveEditSegue" else { return }
         let photo = photoImage.image ?? nil
         let name = nameTextField.text ?? ""
         let price = priceTextField.text ?? ""
         let savings = savingsTextField.text ?? ""
         let income = incomeTextField.text ?? ""
 
-        self.goal = Goal(name: name, photo: photo, price: price, savings: savings, income: income, isFavourite: self.goal.isFavourite, isDone: self.goal.isDone)
+        self.goal = Goal(name: name, photo: photo, price: price, savings: savings, income: income, isFavourite: self.goal.isFavourite, isDone: goal.isDone)
     }
 }
 
 // MARK: - Private methods
-extension NewGoalTableViewController {
+extension EditGoalTableViewController {
     private func updateSaveButtonState() {
         let nameText = nameTextField.text ?? ""
         let priceText = priceTextField.text ?? ""
@@ -87,7 +87,7 @@ extension NewGoalTableViewController {
 }
 
 // MARK: - UITextFieldDelegate
-extension NewGoalTableViewController: UITextFieldDelegate {
+extension EditGoalTableViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -117,7 +117,7 @@ extension NewGoalTableViewController: UITextFieldDelegate {
 }
 
 // MARK: - WorkWithImage
-extension NewGoalTableViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension EditGoalTableViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func chooseImagePicker(source: UIImagePickerController.SourceType) {
         if UIImagePickerController.isSourceTypeAvailable(source) {
             let imagePicker = UIImagePickerController()

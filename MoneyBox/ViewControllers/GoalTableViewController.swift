@@ -10,9 +10,9 @@ import UIKit
 class GoalTableViewController: UITableViewController {
     
     var goals = [
-        Goal(name: "Кубик-рубика", photo: nil, price: "400", savings: "0", income: "10", isFavourite: false),
-        Goal(name: "Машинка", photo: nil, price: "600", savings: "100", income: "10", isFavourite: false),
-        Goal(name: "Наушники", photo: nil, price: "800", savings: "200", income: "10", isFavourite: false)
+        Goal(name: "Кубик-рубика", photo: UIImage(systemName: "square.dashed"), price: "400", savings: "0", income: "10", isFavourite: false, isDone: false),
+        Goal(name: "Машинка", photo: UIImage(systemName: "square.dashed"), price: "600", savings: "100", income: "10", isFavourite: false, isDone: false),
+        Goal(name: "Наушники", photo: UIImage(systemName: "square.dashed"), price: "800", savings: "200", income: "10", isFavourite: false, isDone: false)
     ]
     
     override func viewDidLoad() {
@@ -23,29 +23,29 @@ class GoalTableViewController: UITableViewController {
     
     // MARK: - Navigation
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
-        guard segue.identifier == "saveSegue" else { return }
-        let sourceVC = segue.source as! NewGoalTableViewController
-        let goal = sourceVC.goal
-        
-        if let selectedIndexPath = tableView.indexPathForSelectedRow {
-            goals[selectedIndexPath.row] = goal
-            tableView.reloadRows(at: [selectedIndexPath], with: .automatic)
-        } else {
+        if segue.identifier == "saveSegue" {
+            let sourceVC = segue.source as! NewGoalTableViewController
+            let goal = sourceVC.goal
             let newIndexPath = IndexPath(row: goals.count, section: 0)
             goals.append(goal)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
-        }
+        } else if segue.identifier == "backFromMain" {
+            let mainGoalVC = segue.source as! MainGoalViewController
+            let goal = mainGoalVC.goal
+            let selectedIndexPath = tableView.indexPathForSelectedRow!
+            goals[selectedIndexPath.row] = goal
+            tableView.reloadRows(at: [selectedIndexPath], with: .automatic)
+        } else { return }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        guard segue.identifier == "editGoal" else { return }
+        guard segue.identifier == "mainGoal" else { return }
         let indexPath = tableView.indexPathForSelectedRow!
         let goal = goals[indexPath.row]
         let navigationVC = segue.destination as! UINavigationController
-        let newGoalTableVC = navigationVC.topViewController as! NewGoalTableViewController
-        newGoalTableVC.goal = goal
-        newGoalTableVC.title = "Редактирование"
+        let mainGoalVC = navigationVC.topViewController as! MainGoalViewController
+        mainGoalVC.goal = goal
     }
 }
 

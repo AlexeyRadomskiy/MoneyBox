@@ -14,4 +14,5 @@ struct Goal {
     var savings: String
     var income: String
     var isFavourite: Bool
+    var isDone: Bool
 }

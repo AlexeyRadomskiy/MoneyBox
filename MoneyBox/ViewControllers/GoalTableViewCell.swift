@@ -25,7 +25,7 @@ class GoalTableViewCell: UITableViewCell {
     func set(goal: Goal) {
         self.goalImage.image = goal.photo
         self.nameLabel.text = goal.name
-        self.progressLabel.text = "Накоплено \(goal.income) ₽ из \(goal.price) ₽"
+        self.progressLabel.text = "Накоплено \(goal.savings) ₽ из \(goal.price) ₽"
         self.weeksLeftLabel.text = "Осталось \((Int(goal.price)! - Int(goal.savings)!) / Int(goal.income)!) недель"
     }
 }
