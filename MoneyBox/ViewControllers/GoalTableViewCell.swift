@@ -8,7 +8,7 @@
 import UIKit
 
 class GoalTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var goalImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var progressLabel: UILabel!
@@ -26,6 +26,6 @@ class GoalTableViewCell: UITableViewCell {
         self.goalImage.image = goal.photo
         self.nameLabel.text = goal.name
         self.progressLabel.text = "Накоплено \(goal.savings) ₽ из \(goal.price) ₽"
-        self.weeksLeftLabel.text = "Осталось \((Int(goal.price)! - Int(goal.savings)!) / Int(goal.income)!) недель"
+        self.weeksLeftLabel.text = "Осталось копить \((Int(goal.price)! - Int(goal.savings)!) / (Int(goal.income)!)) недель"
     }
 }
