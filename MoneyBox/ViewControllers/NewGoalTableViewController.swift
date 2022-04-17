@@ -9,7 +9,13 @@ import UIKit
 
 class NewGoalTableViewController: UITableViewController {
     
-    var goal = Goal(name: "", photo: nil, price: "", savings: "", income: "", isFavourite: false, isDone: false)
+    var goal = Goal(name: "",
+                    photo: UIImage(systemName: "square.dashed"),
+                    price: "",
+                    savings: "",
+                    income: "",
+                    isFavourite: false,
+                    isDone: false)
     
     @IBOutlet weak var photoImage: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
@@ -21,7 +27,6 @@ class NewGoalTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        updateSaveButtonState()
     }
     
     @IBAction func textChanged(_ sender: Any) {
@@ -49,7 +54,7 @@ class NewGoalTableViewController: UITableViewController {
         present(actionSheet, animated: true)
     }
     
-// MARK: - Navigation
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         guard segue.identifier == "saveSegue" else { return }
@@ -58,8 +63,14 @@ class NewGoalTableViewController: UITableViewController {
         let price = priceTextField.text ?? ""
         let savings = savingsTextField.text ?? ""
         let income = incomeTextField.text ?? ""
-
-        self.goal = Goal(name: name, photo: photo, price: price, savings: savings, income: income, isFavourite: self.goal.isFavourite, isDone: self.goal.isDone)
+        
+        self.goal = Goal(name: name,
+                         photo: photo,
+                         price: price,
+                         savings: savings,
+                         income: income,
+                         isFavourite: self.goal.isFavourite,
+                         isDone: self.goal.isDone)
     }
 }
 
@@ -71,6 +82,9 @@ extension NewGoalTableViewController {
         let savingsText = savingsTextField.text ?? ""
         let incomeText = incomeTextField.text ?? ""
         saveButton.isEnabled = !nameText.isEmpty && !priceText.isEmpty && !savingsText.isEmpty && !incomeText.isEmpty
+        if saveButton.isEnabled {
+            errorHandling(name: nameText, price: priceText, savings: savingsText, income: incomeText)
+        }
     }
     
     private func updateUI() {
@@ -79,6 +93,27 @@ extension NewGoalTableViewController {
         priceTextField.text = goal.price
         savingsTextField.text = goal.savings
         incomeTextField.text = goal.income
+    }
+    
+    private func errorHandling(name: String, price: String, savings: String, income: String) {
+        let price = Int(price) ?? 0
+        let savings = Int(savings) ?? 0
+        let income = Int(income) ?? 0
+        if savings >= price {
+            showAlert(title: "Измените накопления", message: "Цена должна быть больше накоплений")
+            savingsTextField.text = ""
+        }
+        if  income == 0 {
+            showAlert(title: "Измените доход", message: "Необходимо указать минимальный доход")
+            incomeTextField.text = ""
+        }
+    }
+    
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
     
     @objc private func didTapOne() {
