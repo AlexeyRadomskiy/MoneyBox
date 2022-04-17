@@ -9,7 +9,13 @@ import UIKit
 
 class EditGoalTableViewController: UITableViewController {
     
-    var goal = Goal(name: "", photo: nil, price: "", savings: "", income: "", isFavourite: false, isDone: false)
+    var goal = Goal(name: "",
+                    photo: nil,
+                    price: "",
+                    savings: "",
+                    income: "",
+                    isFavourite: false,
+                    isDone: false)
     
     @IBOutlet weak var photoImage: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
@@ -17,7 +23,7 @@ class EditGoalTableViewController: UITableViewController {
     @IBOutlet weak var savingsTextField: UITextField!
     @IBOutlet weak var incomeTextField: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -58,8 +64,14 @@ class EditGoalTableViewController: UITableViewController {
         let price = priceTextField.text ?? ""
         let savings = savingsTextField.text ?? ""
         let income = incomeTextField.text ?? ""
-
-        self.goal = Goal(name: name, photo: photo, price: price, savings: savings, income: income, isFavourite: self.goal.isFavourite, isDone: goal.isDone)
+        
+        self.goal = Goal(name: name,
+                         photo: photo,
+                         price: price,
+                         savings: savings,
+                         income: income,
+                         isFavourite: self.goal.isFavourite,
+                         isDone: goal.isDone)
     }
 }
 
@@ -71,6 +83,12 @@ extension EditGoalTableViewController {
         let savingsText = savingsTextField.text ?? ""
         let incomeText = incomeTextField.text ?? ""
         saveButton.isEnabled = !nameText.isEmpty && !priceText.isEmpty && !savingsText.isEmpty && !incomeText.isEmpty
+        if saveButton.isEnabled {
+            errorHandling(name: nameText,
+                          price: priceText,
+                          savings: savingsText,
+                          income: incomeText)
+        }
     }
     
     private func updateUI() {
@@ -79,6 +97,29 @@ extension EditGoalTableViewController {
         priceTextField.text = goal.price
         savingsTextField.text = goal.savings
         incomeTextField.text = goal.income
+    }
+    
+    private func errorHandling(name: String, price: String, savings: String, income: String) {
+        let price = Int(price) ?? 0
+        let savings = Int(savings) ?? 0
+        let income = Int(income) ?? 0
+        if savings >= price {
+            showAlert(title: "Измените накопления", message: "Цена должна быть больше накоплений")
+            savingsTextField.text = ""
+        }
+        if  income == 0 {
+            showAlert(title: "Измените доход", message: "Необходимо указать минимальный доход")
+            incomeTextField.text = ""
+        }
+    }
+    
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
     
     @objc private func didTapOne() {
