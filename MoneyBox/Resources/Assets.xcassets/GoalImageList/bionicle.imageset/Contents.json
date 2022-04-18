@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "bionicle.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "stack-of-gold-coins-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
