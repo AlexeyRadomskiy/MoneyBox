@@ -102,10 +102,12 @@ extension NewGoalTableViewController {
         if savings >= price {
             showAlert(title: "Измените накопления", message: "Цена должна быть больше накоплений")
             savingsTextField.text = ""
+            saveButton.isEnabled = false
         }
         if  income == 0 {
             showAlert(title: "Измените доход", message: "Необходимо указать минимальный доход")
             incomeTextField.text = ""
+            saveButton.isEnabled = false
         }
     }
     
