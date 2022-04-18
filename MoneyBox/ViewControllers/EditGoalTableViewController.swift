@@ -104,7 +104,7 @@ extension EditGoalTableViewController {
         let savings = Int(savings) ?? 0
         let income = Int(income) ?? 0
         if savings >= price {
-            showAlert(title: "Измените накопления", message: "Цена должна быть больше накоплений")
+            showAlert(title: "Измените накопления", message: "Накопления не могут быть больше цены")
             savingsTextField.text = ""
         }
         if  income == 0 {
