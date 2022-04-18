@@ -90,9 +90,14 @@ extension GoalViewController {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if sortingSegmentedControl.selectedSegmentIndex == 0 && editingStyle == .delete {
-            goals.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+        if editingStyle == .delete {
+            if sortingSegmentedControl.selectedSegmentIndex == 0 {
+                goals.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+            } else {
+                archiveGoals.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+            }
         }
     }
     

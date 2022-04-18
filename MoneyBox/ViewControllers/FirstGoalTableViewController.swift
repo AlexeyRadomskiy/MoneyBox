@@ -67,12 +67,12 @@ class FirstGoalTableViewController: UITableViewController {
         let income = incomeTextField.text ?? ""
         
         goal = Goal(name: name,
-                         photo: photo,
-                         price: price,
-                         savings: savings,
-                         income: income,
-                         isFavourite: self.goal.isFavourite,
-                         isDone: self.goal.isDone)
+                    photo: photo,
+                    price: price,
+                    savings: savings,
+                    income: income,
+                    isFavourite: self.goal.isFavourite,
+                    isDone: self.goal.isDone)
         
         goals.append(goal)
         

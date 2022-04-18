@@ -405,7 +405,7 @@
                                 <segue destination="b0D-fL-d9M" kind="unwind" unwindAction="unwindSegueWithSegue:" id="lRc-8n-n2r"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Сохранить" style="done" id="3NE-fh-bil">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Сохранить" style="done" id="3NE-fh-bil">
                             <connections>
                                 <segue destination="b0D-fL-d9M" kind="unwind" identifier="saveSegue" unwindAction="unwindSegueWithSegue:" id="QoK-Ju-O6v"/>
                             </connections>
@@ -483,7 +483,7 @@
             </objects>
             <point key="canvasLocation" x="4980" y="-911"/>
         </scene>
-        <!--Main Goal View Controller-->
+        <!--Активно-->
         <scene sceneID="h3h-AK-T1h">
             <objects>
                 <viewController id="u2X-fF-Mfo" customClass="MainGoalViewController" customModule="MoneyBox" customModuleProvider="target" sceneMemberID="viewController">
@@ -492,7 +492,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-ut-Pwu">
-                                <rect key="frame" x="16" y="88" width="382" height="548"/>
+                                <rect key="frame" x="16" y="88" width="382" height="618.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uXp-IJ-nD6">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="382"/>
@@ -501,13 +501,15 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Eci-9o-aYB">
-                                        <rect key="frame" x="0.0" y="414" width="382" height="29"/>
+                                        <rect key="frame" x="0.0" y="414" width="382" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnE-UA-W2I">
-                                                <rect key="frame" x="0.0" y="0.0" width="24.5" height="29"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="24.5" id="spb-DT-On7"/>
+                                                    <constraint firstAttribute="width" constant="60" id="spb-DT-On7"/>
+                                                    <constraint firstAttribute="height" constant="60" id="tJ5-sD-Nn3"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title=" ">
                                                     <imageReference key="image" image="star" catalog="system" symbolScale="large"/>
@@ -517,7 +519,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKd-bE-Fct">
-                                                <rect key="frame" x="40.5" y="0.0" width="341.5" height="29"/>
+                                                <rect key="frame" x="76" y="0.0" width="306" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -525,16 +527,20 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrh-D2-41A">
-                                        <rect key="frame" x="0.0" y="475" width="382" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="506" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jeu-9j-VN7">
-                                        <rect key="frame" x="0.0" y="527.5" width="382" height="20.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jeu-9j-VN7">
+                                        <rect key="frame" x="0.0" y="558.5" width="382" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3S-Tt-P8O">
-                                                <rect key="frame" x="0.0" y="0.0" width="19.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="42z-Io-mq5"/>
+                                                    <constraint firstAttribute="height" constant="60" id="Qp5-00-9yb"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal">
                                                     <imageReference key="image" image="minus" catalog="system" symbolScale="large"/>
@@ -544,13 +550,18 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyB-wL-ahD">
-                                                <rect key="frame" x="170.5" y="0.0" width="41.5" height="20.5"/>
+                                                <rect key="frame" x="68" y="0.0" width="246" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRQ-ue-Bpf">
-                                                <rect key="frame" x="362.5" y="0.0" width="19.5" height="20.5"/>
+                                                <rect key="frame" x="322" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="9QL-P0-hGg"/>
+                                                    <constraint firstAttribute="height" constant="60" id="geD-04-DHo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal">
                                                     <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
@@ -572,7 +583,7 @@
                             <constraint firstItem="qg6-ut-Pwu" firstAttribute="top" secondItem="Skf-jN-8V3" secondAttribute="top" id="lzh-Yq-68x"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="tAS-FK-W0D">
+                    <navigationItem key="navigationItem" title="Активно" id="tAS-FK-W0D">
                         <barButtonItem key="leftBarButtonItem" image="arrow.left" catalog="system" id="ien-pX-pgT">
                             <connections>
                                 <segue destination="FZN-Pk-qwv" kind="unwind" identifier="backFromMain" unwindAction="unwindSegueWithSegue:" id="avb-Rs-1D5"/>
@@ -985,7 +996,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Новая цель" id="7VN-HQ-ClU">
-                        <barButtonItem key="rightBarButtonItem" title="Сохранить" style="done" id="qtw-Aj-RAt">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Сохранить" style="done" id="qtw-Aj-RAt">
                             <connections>
                                 <segue destination="yCH-Gd-FYf" kind="presentation" identifier="firstGoalSegue" id="85l-H2-0uV"/>
                             </connections>
