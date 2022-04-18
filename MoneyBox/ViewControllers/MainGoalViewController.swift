@@ -105,8 +105,8 @@ extension MainGoalViewController {
         photoImage.image = goal.photo
         setStatusForFavouriteButton()
         nameLabel.text = goal.name
-        weeksLeftLabel.text = "Осталось копить \((Int(goal.price)! - Int(goal.savings)!) / Int(goal.income)!) недель"
-        progressLabel.text = " Накоплено \(goal.savings) ₽ из \(goal.price) ₽ "
+        weeksLeftLabel.text = "Осталось копить \nнедель: \((Int(goal.price)! - Int(goal.savings)!) / Int(goal.income)!)"
+        progressLabel.text = "Накоплено \(goal.savings) ₽ \nиз \(goal.price) ₽ "
     }
     
     private func setStatusForFavouriteButton() {

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "thirdSlide.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "stack-of-gold-coins-1.png",
+      "filename" : "thirdSlide@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "thirdSlide@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

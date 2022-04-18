@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "firstSlide.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "kisspng-piggy-bank-money-coin-domestic-pig-ipad-retina-wallpaper-5c154e6810eb11.5806144515449002000693.png",
+      "filename" : "firstSlide@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "firstSlide@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

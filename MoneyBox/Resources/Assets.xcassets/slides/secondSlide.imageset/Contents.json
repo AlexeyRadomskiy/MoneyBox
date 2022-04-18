@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "secondSlide.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "kisspng-savings-account-money-piggy-bank-pig-5ab40c34be5fc5.0669368815217490447798.png",
+      "filename" : "secondSlide@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "secondSlide@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

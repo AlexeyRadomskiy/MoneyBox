@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6C39B6EB27FC9B5400108F3D /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39B6EA27FC9B5400108F3D /* Goal.swift */; };
+		6CA28FCB280DD8E3003C7242 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA28FCA280DD8E3003C7242 /* Developer.swift */; };
+		6CA28FCD280DDA3F003C7242 /* DevelopersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA28FCC280DDA3F003C7242 /* DevelopersTableViewController.swift */; };
+		6CA28FCF280DDA87003C7242 /* DeveloperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA28FCE280DDA87003C7242 /* DeveloperTableViewCell.swift */; };
 		6CC22BDD280DC23600ECCD12 /* FirstGoalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC22BDC280DC23600ECCD12 /* FirstGoalTableViewController.swift */; };
 		6CCE95AC280AD85F0027D837 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE95AB280AD85F0027D837 /* GoalViewController.swift */; };
 		6CCE95AE280ADBE50027D837 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE95AD280ADBE50027D837 /* GoalTableViewCell.swift */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		6C39B6EA27FC9B5400108F3D /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		6CA28FCA280DD8E3003C7242 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		6CA28FCC280DDA3F003C7242 /* DevelopersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersTableViewController.swift; sourceTree = "<group>"; };
+		6CA28FCE280DDA87003C7242 /* DeveloperTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperTableViewCell.swift; sourceTree = "<group>"; };
 		6CC22BDC280DC23600ECCD12 /* FirstGoalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstGoalTableViewController.swift; sourceTree = "<group>"; };
 		6CCE95AB280AD85F0027D837 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		6CCE95AD280ADBE50027D837 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
@@ -68,13 +74,16 @@
 		6C39B6E527FC997500108F3D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9A82D48827FF52E7006E5498 /* Onboarding */,
 				9A82D49B27FF5FEF006E5498 /* WelcomeViewController.swift */,
 				9A82D49F27FF6366006E5498 /* NameViewController.swift */,
 				6CC22BDC280DC23600ECCD12 /* FirstGoalTableViewController.swift */,
+				6CA28FCC280DDA3F003C7242 /* DevelopersTableViewController.swift */,
+				6CA28FCE280DDA87003C7242 /* DeveloperTableViewCell.swift */,
 				6CCE95AB280AD85F0027D837 /* GoalViewController.swift */,
 				6CCE95AD280ADBE50027D837 /* GoalTableViewCell.swift */,
-				6CCE95AF280AF5A50027D837 /* NewGoalTableViewController.swift */,
 				6CCE95B3280B567E0027D837 /* MainGoalViewController.swift */,
+				6CCE95AF280AF5A50027D837 /* NewGoalTableViewController.swift */,
 				6CCE95B5280C05670027D837 /* EditGoalTableViewController.swift */,
 			);
 			path = ViewControllers;
@@ -99,7 +108,6 @@
 		6CD1D01527E5366000261B5D /* MoneyBox */ = {
 			isa = PBXGroup;
 			children = (
-				9A82D48827FF52E7006E5498 /* Onboarding */,
 				6C39B6E527FC997500108F3D /* ViewControllers */,
 				6CE5158527F4D14B00BE8497 /* Models */,
 				6CD1D02B27E536CA00261B5D /* Storyboards */,
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				6C39B6EA27FC9B5400108F3D /* Goal.swift */,
+				6CA28FCA280DD8E3003C7242 /* Developer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,12 +262,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CA28FCD280DDA3F003C7242 /* DevelopersTableViewController.swift in Sources */,
 				9A82D49627FF58FA006E5498 /* OnboardingSlide.swift in Sources */,
 				6CD1D01727E5366000261B5D /* AppDelegate.swift in Sources */,
 				9A82D4A027FF6366006E5498 /* NameViewController.swift in Sources */,
 				6CCE95AC280AD85F0027D837 /* GoalViewController.swift in Sources */,
+				6CA28FCF280DDA87003C7242 /* DeveloperTableViewCell.swift in Sources */,
 				6CCE95AE280ADBE50027D837 /* GoalTableViewCell.swift in Sources */,
 				9A82D49327FF58D7006E5498 /* ContentViewController.swift in Sources */,
+				6CA28FCB280DD8E3003C7242 /* Developer.swift in Sources */,
 				6CCE95B6280C05670027D837 /* EditGoalTableViewController.swift in Sources */,
 				6CD1D01927E5366000261B5D /* SceneDelegate.swift in Sources */,
 				6CCE95B4280B567E0027D837 /* MainGoalViewController.swift in Sources */,

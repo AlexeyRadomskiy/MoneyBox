@@ -11,6 +11,7 @@ class GoalViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var sortingSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var addGoalButton: UIBarButtonItem!
     
     var goals: [Goal]!
     
@@ -36,11 +37,11 @@ class GoalViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
         if segue.identifier == "saveSegue" {
+            sortingSegmentedControl.selectedSegmentIndex = 0
             let sourceVC = segue.source as! NewGoalTableViewController
             let goal = sourceVC.goal
-            let newIndexPath = IndexPath(row: goals.count, section: 0)
             goals.append(goal)
-            tableView.insertRows(at: [newIndexPath], with: .automatic)
+            tableView.reloadData()
         } else if segue.identifier == "backFromMain" {
             let mainGoalVC = segue.source as! MainGoalViewController
             let goal = mainGoalVC.goal
@@ -107,15 +108,27 @@ extension GoalViewController {
     }
     
     func favouriteAction(at indexPath: IndexPath) -> UIContextualAction {
-        var goal = goals[indexPath.row]
-        let action = UIContextualAction(style: .normal, title: nil) { action, view, completion in
-            goal.isFavourite = !goal.isFavourite
-            self.goals[indexPath.row] = goal
-            completion(true)
+        if sortingSegmentedControl.selectedSegmentIndex == 0 {
+            var goal = goals[indexPath.row]
+            let action = UIContextualAction(style: .normal, title: nil) { action, view, completion in
+                goal.isFavourite = !goal.isFavourite
+                self.goals[indexPath.row] = goal
+                completion(true)
+            }
+            action.backgroundColor = .systemOrange
+            action.image = goal.isFavourite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+            return action
+        } else {
+            var goal = archiveGoals[indexPath.row]
+            let action = UIContextualAction(style: .normal, title: nil) { action, view, completion in
+                goal.isFavourite = !goal.isFavourite
+                self.archiveGoals[indexPath.row] = goal
+                completion(true)
+            }
+            action.backgroundColor = .systemOrange
+            action.image = goal.isFavourite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+            return action
         }
-        action.backgroundColor = .systemOrange
-        action.image = goal.isFavourite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
-        return action
     }
 }
 
