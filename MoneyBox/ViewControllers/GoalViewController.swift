@@ -12,27 +12,7 @@ class GoalViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet var tableView: UITableView!
     @IBOutlet var sortingSegmentedControl: UISegmentedControl!
     
-    var goals = [Goal(name: "Кубик-рубика",
-                      photo: UIImage(systemName: "square.dashed"),
-                      price: "400",
-                      savings: "0",
-                      income: "10",
-                      isFavourite: false,
-                      isDone: false),
-                 Goal(name: "Машинка",
-                      photo: UIImage(systemName: "square.dashed"),
-                      price: "600",
-                      savings: "100",
-                      income: "10",
-                      isFavourite: false,
-                      isDone: false),
-                 Goal(name: "Наушники",
-                      photo: UIImage(systemName: "square.dashed"),
-                      price: "800",
-                      savings: "200",
-                      income: "10",
-                      isFavourite: false,
-                      isDone: false)]
+    var goals: [Goal]!
     
     private var archiveGoals: [Goal] = []
     
