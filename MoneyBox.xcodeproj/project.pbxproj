@@ -27,9 +27,6 @@
 		9A82D49327FF58D7006E5498 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49227FF58D7006E5498 /* ContentViewController.swift */; };
 		9A82D49627FF58FA006E5498 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49527FF58FA006E5498 /* OnboardingSlide.swift */; };
 		9A82D49927FF590B006E5498 /* SlideDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49827FF590B006E5498 /* SlideDataManager.swift */; };
-		9A82D49C27FF5FEF006E5498 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49B27FF5FEF006E5498 /* WelcomeViewController.swift */; };
-		9A82D4A027FF6366006E5498 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D49F27FF6366006E5498 /* NameViewController.swift */; };
-		9A82D4A727FF642A006E5498 /* backgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82D4A627FF642A006E5498 /* backgroundGradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,9 +52,6 @@
 		9A82D49227FF58D7006E5498 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		9A82D49527FF58FA006E5498 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		9A82D49827FF590B006E5498 /* SlideDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideDataManager.swift; sourceTree = "<group>"; };
-		9A82D49B27FF5FEF006E5498 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		9A82D49F27FF6366006E5498 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
-		9A82D4A627FF642A006E5498 /* backgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundGradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				9A82D48827FF52E7006E5498 /* Onboarding */,
-				9A82D49B27FF5FEF006E5498 /* WelcomeViewController.swift */,
-				9A82D49F27FF6366006E5498 /* NameViewController.swift */,
 				6CC22BDC280DC23600ECCD12 /* FirstGoalTableViewController.swift */,
 				6CA28FCC280DDA3F003C7242 /* DevelopersTableViewController.swift */,
 				6CA28FCE280DDA87003C7242 /* DeveloperTableViewCell.swift */,
@@ -133,7 +125,6 @@
 			children = (
 				6CD1D01C27E5366000261B5D /* Main.storyboard */,
 				6CD1D02127E5366200261B5D /* LaunchScreen.storyboard */,
-				9A82D4A627FF642A006E5498 /* backgroundGradient.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -265,7 +256,6 @@
 				6CA28FCD280DDA3F003C7242 /* DevelopersTableViewController.swift in Sources */,
 				9A82D49627FF58FA006E5498 /* OnboardingSlide.swift in Sources */,
 				6CD1D01727E5366000261B5D /* AppDelegate.swift in Sources */,
-				9A82D4A027FF6366006E5498 /* NameViewController.swift in Sources */,
 				6CCE95AC280AD85F0027D837 /* GoalViewController.swift in Sources */,
 				6CA28FCF280DDA87003C7242 /* DeveloperTableViewCell.swift in Sources */,
 				6CCE95AE280ADBE50027D837 /* GoalTableViewCell.swift in Sources */,
@@ -275,10 +265,8 @@
 				6CD1D01927E5366000261B5D /* SceneDelegate.swift in Sources */,
 				6CCE95B4280B567E0027D837 /* MainGoalViewController.swift in Sources */,
 				6C39B6EB27FC9B5400108F3D /* Goal.swift in Sources */,
-				9A82D4A727FF642A006E5498 /* backgroundGradient.swift in Sources */,
 				6CC22BDD280DC23600ECCD12 /* FirstGoalTableViewController.swift in Sources */,
 				6CCE95B0280AF5A50027D837 /* NewGoalTableViewController.swift in Sources */,
-				9A82D49C27FF5FEF006E5498 /* WelcomeViewController.swift in Sources */,
 				9A82D48F27FF58C2006E5498 /* PageViewController.swift in Sources */,
 				9A82D49927FF590B006E5498 /* SlideDataManager.swift in Sources */,
 			);
